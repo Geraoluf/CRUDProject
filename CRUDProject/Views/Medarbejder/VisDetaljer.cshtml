@@ -1,0 +1,52 @@
+﻿@model CRUDProject.Models.Domain.SeDetaljerViewModel
+@{
+}
+
+
+
+
+<h1> Oversigt over medarbejdere </h1>
+<form method="post" action="" class="mt-5">
+
+    <div class="mb-3">
+        <label for="" class="form-label">Navn</label>
+        <input type="text" class="form-control" asp-for="Id" readonly />
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Navn</label>
+        <input type="text" class="form-control" asp-for="Navn" />
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email" />
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Løn</label>
+        <input type="number" class="form-control" asp-for="Løn" />
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Personnummer</label>
+        <input type="date" class="form-control" asp-for="PersonNummer" />
+    </div>
+
+
+    <div class="mb-3">
+        <label for="" class="form-label">Afdeling</label>
+        <input type="text" class="form-control" asp-for="Afdeling" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Gem</button>
+
+
+
+    <button type="submit" class="btn btn-danger ms-3"
+    asp-action="Slet"
+    asp-controller="Medarbejder">Slet</button>
+
+</form>
+
+

@@ -1,0 +1,49 @@
+﻿@model List<CRUDProject.Models.Domain.Medarbejder>
+
+
+@{
+}
+
+<h1>Medarbejder</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Navn</th>
+            <th>Email</th>
+            <th>Løn</th>
+            <th>Personnummer</th>
+            <th>Afdeling</th>
+            <th></th>
+
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+        @foreach (var medarbejder in Model)
+        {
+            <tr>
+                <td>@medarbejder.Id</td>
+                <td>@medarbejder.Navn</td>
+                <td>@medarbejder.Email</td>
+                <td>@medarbejder.Løn</td>
+                <td>@medarbejder.PersonNummer.ToString("dd-MM-yyyy")</td>
+                <td>@medarbejder.Afdeling</td>
+                <td><a href="/Medarbejder/Detaljer/@medarbejder.Id">vis</a></td>
+
+
+                
+
+
+                
+
+            </tr>
+
+        }
+    </tbody>
+
+
+</table>
