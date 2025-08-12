@@ -1,6 +1,6 @@
 ﻿namespace CRUDProject.Models.Domain
 {
-    public class TilføjMedarbejder
+    public class AddEmployee
     {
 
        

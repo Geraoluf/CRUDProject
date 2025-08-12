@@ -1,4 +1,4 @@
-﻿@model CRUDProject.Models.Domain.Medarbejder
+﻿@model CRUDProject.Models.Domain.Employee
 
 
 @{
@@ -6,7 +6,8 @@
 
 
 <h1>Tilføj Medarbejder </h1>
-<form method="post" action="TilføjMedarbejder" class="mt-5">
+<form method="post" asp-action="AddEmployee" class="mt-5">
+
     <div class="mb-3">
         <label for="" class="form-label">Navn</label>
         <input type="text" class="form-control" asp-for="Navn" />

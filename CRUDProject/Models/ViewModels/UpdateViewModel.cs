@@ -1,6 +1,6 @@
-﻿namespace CRUDProject.Models.Domain
+﻿namespace CRUDProject.Models.ViewModels
 {
-    public class Medarbejder
+    public class UpdateViewModel
     {
 
         public Guid Id { get; set; }
@@ -14,6 +14,5 @@
         public DateTime PersonNummer { get; set; }
 
         public string Afdeling { get; set; }
-
     }
 }

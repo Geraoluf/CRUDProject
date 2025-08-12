@@ -1,7 +1,8 @@
-﻿namespace CRUDProject.Models.Domain
+﻿namespace CRUDProject.Models.ViewModels
 {
-    public class UpdateViewModel
+    public class DetailsViewModel
     {
+
 
         public Guid Id { get; set; }
 

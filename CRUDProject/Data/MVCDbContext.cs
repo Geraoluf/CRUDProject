@@ -11,7 +11,7 @@ namespace CRUDProject.Data
 
 
 
-        public DbSet<Medarbejder> Medarbejder { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
     
 

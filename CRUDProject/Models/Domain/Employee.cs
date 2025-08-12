@@ -1,8 +1,7 @@
 ﻿namespace CRUDProject.Models.Domain
 {
-    public class SeDetaljerViewModel
+    public class Employee
     {
-
 
         public Guid Id { get; set; }
 
@@ -15,5 +14,6 @@
         public DateTime PersonNummer { get; set; }
 
         public string Afdeling { get; set; }
+
     }
 }
