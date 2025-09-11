@@ -106,10 +106,10 @@ namespace CRUDProject.Controllers
                 employee.PersonNummer = Model.PersonNummer;
                 employee.Afdeling = Model.Afdeling;
                 await dbContext.SaveChangesAsync();
-                return RedirectToAction("VisData");
+                return RedirectToAction("Index");
 
             }
-            return RedirectToAction("VisData"); 
+            return RedirectToAction("Edit"); 
         }
 
 
@@ -117,7 +117,7 @@ namespace CRUDProject.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Slet(UpdateViewModel model)
+        public async Task<IActionResult> Delete(UpdateViewModel model)
         {
             var employee = await dbContext.Employees.FindAsync(model.Id);
 
@@ -126,10 +126,10 @@ namespace CRUDProject.Controllers
                 dbContext.Employees.Remove(employee);
                 await dbContext.SaveChangesAsync();
 
-                return RedirectToAction("VisData");
+                return RedirectToAction("Index");
             }
 
-            return RedirectToAction("VisData");
+            return RedirectToAction("Edit");
 
         }
 
