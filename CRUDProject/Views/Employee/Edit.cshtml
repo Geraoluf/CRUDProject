@@ -7,7 +7,8 @@
 
 
 <h1> Detaljer om medarbejdere </h1>
-<form method="post" action="VisDetaljer" class="mt-5">
+<form method="post" asp-action="Edit" asp-controller="Employee" class="mt-5">
+
 
     <div class="mb-3">
         <label for="" class="form-label">Medarbejder Id</label>
@@ -40,13 +41,19 @@
         <input type="text" class="form-control" asp-for="Afdeling" />
     </div>
 
-    <button type="submit" class="btn btn-primary">Gem</button>
+    <form method="post" class="mt-5">
+       
 
+        <button type="submit" class="btn btn-primary"
+                asp-action="Edit" asp-controller="Employee">
+            Gem
+        </button>
 
-
-    <button type="submit" class="btn btn-danger ms-3"
-    asp-action="Delete"
-    asp-controller="Medarbejder">Slet</button>
+        <button type="submit" class="btn btn-danger ms-3"
+                asp-action="Delete" asp-controller="Employee">
+            Slet
+        </button>
+    </form>
 
 </form>
 
