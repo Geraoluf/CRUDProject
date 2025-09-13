@@ -133,7 +133,11 @@ namespace CRUDProject.Controllers
 
         }
 
+        public async Task<IActionResult> Back()
+        {
 
+            return RedirectToAction("Index");
+        }
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
