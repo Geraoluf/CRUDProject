@@ -5,16 +5,11 @@ namespace CRUDProject.Data
 {
     public class MVCDbContext : DbContext
     {
-        public MVCDbContext(DbContextOptions options) : base(options)
+        public MVCDbContext(DbContextOptions<MVCDbContext> options)
+            : base(options)
         {
         }
 
-
-
         public DbSet<Employee> Employees { get; set; }
     }
-    
-
-
-    
 }
